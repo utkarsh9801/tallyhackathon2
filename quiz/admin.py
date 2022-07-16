@@ -1,5 +1,5 @@
 from django.contrib import admin
-from quiz.models import Quiz
+from quiz.models import Quiz, scoreModel
 
 # Register your models here.
 class QuizAdmin(admin.ModelAdmin):
@@ -7,3 +7,5 @@ class QuizAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Quiz, QuizAdmin)
+
+admin.site.register(scoreModel)
