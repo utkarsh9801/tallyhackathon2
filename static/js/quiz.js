@@ -61,13 +61,15 @@ function submitAnswers(answers){
 			score++;
 		}
 	}
-
+function myFunc() {
+        return score;
+    }
 	//Display Result
 	var results = document.getElementById('results');
-	const s = "result/" + toString(score);
+	// const s = "result/" + toString(score);
 
 	results.innerHTML = "<h3>You scored <span>" + score + "</span> out of <span>" + total + "</span></h3>";
-	window.location.href = s;
+	// results.location.href = s;
 	return false;
 }
 
